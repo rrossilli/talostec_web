@@ -1,0 +1,469 @@
+<style>
+  .laptop-bg{
+    background-image: url("../assets/imgs/laptop_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center; /* Center the image */
+    color:black
+
+  }
+
+  .avatar {
+      border-radius: 50%;
+      width:75%;
+      max-width:200px;
+  }
+
+  .bg-darkgray{
+    background-color: rgb(23,23,23);
+  }
+
+  .feature-content p{font-size:15px}
+  .feature-content{margin-top:20px}
+
+  .single-feature-box:hover .feature-img i{background:rgb(23,23,23)}
+  .feature-img i {  background: rgb(23,23,23); color: #fff; font-size: 30px; padding: 17px 20px; border-radius: 8px; position: absolute;top: -35px; left: 20px;}
+  .single-feature-box{position:relative;z-index:1;border-radius:8px;box-shadow:0 0 17.4px 2.6px rgba(0,0,0,0.1);padding:30px 22px 15px;min-height:220px;transition:all .2s ease-in-out}
+  .single-feature-box:hover .feature-img i{background:rgb(23,23,23);}
+  .single-feature-box:hover{transform:scale(1.1)}
+  .single-feature-box{margin-bottom:80px}a.nav-link.sign_in {
+      display: inline-block;
+  }
+  .single-feature-box{min-height:initial}
+  .single-feature-box {margin-top: 15px;}
+
+</style>
+
+<body>
+
+  <!--Main Navigation-->
+  <header>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+      <div class="container">
+
+        <!-- Brand -->
+        <img class="navbar-brand waves-effect" width="66.66px" src="../assets/imgs/relly.png">
+
+        <!-- Collapse -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <!-- Left -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link waves-effect" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect" href="#contact" >Contact</a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main class="pt-5">
+      <!--Section: Jumbotron-->
+      <section class="card wow laptop-bg fadeIn ">
+
+        <!-- Content -->
+        <div class="card-body text-black text-center py-5 px-5 my-5">
+
+          <h1 class="mb-4">
+            <strong>Relly Development</strong>
+          </h1>
+          <p>
+            <strong>We're really that good.</strong>
+          </p>
+
+          <a class="btn btn-outline-black" data-toggle="modal" data-target="#contact_modal" role="button">Contact Us
+          </a>
+
+        </div>
+        <!-- Content -->
+      </section>
+
+    <div class="container">
+
+
+      <!--Section: Jumbotron-->
+
+      <!--Section: Cards-->
+      <section id="about" class="pt-5">
+        <!-- Heading & Description -->
+        <div class="wow fadeIn">
+          <!--Section heading-->
+          <h2 class="h1 text-center">About <img class="navbar-brand waves-effect" width="100px" src="../assets/imgs/relly.png"></h2>
+        </div>
+
+          <div class="row wow fadeIn">
+            <div class="col-md-8 my-auto">
+
+              <p><strong>Relly</strong> is a small-scale team of passionate and experienced developers. </p>
+              <p>Recently established in 2019, we are ready to make a name for ourselves and create some awesome software.</p>
+              
+            </div>
+
+            <!--Grid column-->
+            <div class="col-md-4 text-center align-items-center my-auto d-flex flex-column">
+
+              <img src="../assets/imgs/rob_selfie.png" class="img-fluid avatar mb-3" alt="">
+  
+              <small class="text-center">(Rob Rossilli, Owner)</small>
+  
+            </div>
+            <!--Grid column-->
+
+          </div>
+
+      </section>
+     
+      <hr>
+
+      <section id="specialties" class="pt-5">
+
+        <div class="wow fadeIn pb-5">
+          <!--Section heading-->
+          <h2 class="h1 text-center">Let's Work Together</h2>
+          <!--Section description-->
+          <p class="text-center">We have a plethora of experience and knowledge in a variety of different areas: </p>
+        </div>
+
+          <div class="row">
+
+            <div class="col-md-6">
+              <div class="single-feature-box p-all-30">
+                <div class="feature-img m-b-30">
+                  <i class="fa fa-desktop" aria-hidden="true"></i>
+                </div>
+                <div class="feature-content">
+                  <h4 class="feature-title">Website Development</h4>
+                  <p>Let's work together to develop an <strong>intuitive</strong> and <strong>responsive</strong> site that you'll love to visit.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="single-feature-box p-all-30">
+                <div class="feature-img m-b-30">
+                  <i class="fa fa-briefcase" aria-hidden="true"></i>
+                </div>
+                <div class="feature-content">
+                  <h4 class="feature-title">System Integrations</h4>
+                  <p>We are exceptional at <strong>integrating APIs </strong> and <strong>coordinating data flow</strong> through a variety of services and databases. We can get it done right.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="single-feature-box p-all-30">
+                <div class="feature-img m-b-30">
+                  <i class="fa fa-tablet-alt" aria-hidden="true"></i>
+                </div>
+                <div class="feature-content">
+                  <h4 class="feature-title">Want an App?</h4>
+                  <p>We've helped a number of clients from <strong>concept</strong> to <strong>completion</strong>.</p>
+                  <p>Let us work with Apple, Google, or Microsoft to publish your app ASAP!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="single-feature-box p-all-30">
+                <div class="feature-img m-b-30">
+                  <i class="fa fa-database" aria-hidden="true"></i>
+                </div>
+                <div class="feature-content">
+                  <h4 class="feature-title">Databases</h4>
+                  <p>We are phenomenal at <strong>designing</strong>, <strong>developing</strong>, and <strong>hosting</strong> state of the art databases.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+      </section>
+
+      <hr>
+
+      <!--Section: Cards-->
+      <section id="projects" class="pt-5">
+
+        <!-- Heading & Description -->
+        <div class="wow fadeIn">
+          <!--Section heading-->
+          <h2 class="h1 text-center mb-4">Reputable Projects</h2>
+          <!--Section description-->
+          <p class="text-center pb-5">Here are some of the projects that Relly has had a major development role in. </p>
+
+        </div>
+        <!-- Heading & Description -->
+
+        <!--Grid row-->
+        <div class="row wow fadeIn">
+
+          <!--Grid column-->
+          <div class="col-lg-5 col-xl-4 mb-4">
+            <!--Featured image-->
+            <div class="view overlay rounded z-depth-1">
+              <img src="../assets/imgs/allware_gui.png" class="img-fluid"
+                alt="">
+              <a href="http://allware.us/page/login" target="_blank">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+            <h3 class="mb-3 font-weight-bold dark-grey-text">
+              <strong>Allware Framework</strong>
+            </h3>
+            <p >Multi-faceted hybrid framework along with an associated iOS application, and graphical interface. </p>
+            <p>
+              <strong>Currently being used by other dev teams and <a href="http://portal.scheidfamilywines.com/#/login" target="_blank">Scheid Vineyards</a> to speed up the development progress of native applications and web-apps.</strong>
+            </p>
+            <a href="http://allware.us/page/login" target="_blank" class="btn btn-primary btn-md">Allware.us
+              <i class="fas fa-play ml-2"></i>
+            </a>
+            <a href="https://apps.apple.com/us/app/allware/id1438899666?ls=1" target="_blank" class="btn btn-dark btn-md">
+              ALLWARE iOS <i class="fab fa-apple ml-2 "></i> 
+            </a>
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+        <hr class="mb-5">
+
+        <!--Grid row-->
+        <div class="row mt-3 wow fadeIn">
+
+          <!--Grid column-->
+          <div class="col-lg-5 col-xl-4 mb-4">
+            <!--Featured image-->
+            <div class="view overlay rounded z-depth-1">
+              <img src="../assets/imgs/my_clinicals.png" class="img-fluid"
+                alt="">
+              <a href="http://myclinicals.com" target="_blank">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+            <h3 class="mb-3 font-weight-bold dark-grey-text">
+              <strong>MyClinicals </strong>
+            </h3>
+            <p>Flexible set of online tools used by doctors and non-technical personnel to develop, configure, and implement their own clinical registries.</p>
+            <p>
+              <strong>Used by leading hospitals such as the <a href="https://my.clevelandclinic.org/" target="_blank" >Cleveland Clinic.</a></strong>
+            </p>
+            <a href="http://myclinicals.com" target="_blank" class="btn btn-primary btn-md">MyClinicals
+              <i class="fas fa-play ml-2"></i>
+            </a>
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+        <hr class="mb-5">
+
+        <!--Grid row-->
+        <div class="row wow fadeIn">
+
+          <!--Grid column-->
+          <div class="col-lg-5 col-xl-4 mb-4">
+            <!--Featured image-->
+            <div class="view overlay rounded z-depth-1">
+              <img src="../assets/imgs/relly_test_screenshot.png" class="img-fluid" alt="">
+              <a href="https://mdbootstrap.com/education/tech-marketing/web-push-introduction/" target="_blank">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-7 col-xl-7 ml-xl-4 mb-4">
+            <h3 class="mb-3 font-weight-bold dark-grey-text">
+              <strong>Relly Testing</strong>
+            </h3>
+            <p >Hybrid Web-App used to design and administer examinations/surveys and track “subjects.” Built with the <a href="allware.us/page/home">Allware Framework</a>.</p>
+            <p>
+              <strong>Beta testing will begin in spring of 2020--initially by <a href="https://csuohio.edu">Cleveland State University</a> students and staff.</strong>
+            </p>
+            <a href="http://allware.us/page/relly_test_home" target="_blank" class="btn btn-primary btn-md">Relly Testing
+              <i class="fas fa-play ml-2"></i>
+            </a>
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+
+        <!--Pagination
+        <nav class="d-flex justify-content-center wow fadeIn">
+          <ul class="pagination pg-blue">
+
+            <li class="page-item disabled">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+
+            <li class="page-item active">
+              <a class="page-link" href="#">1
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">5</a>
+            </li>
+
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        Pagination-->
+
+      </section>
+      <!--Section: Cards-->
+
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="page-footer text-center font-small bg-darkgray darken-2 wow fadeIn mt-5">
+
+    <!--Call to action-->
+    <div class="pt-4">
+      <a class="btn btn-outline-white" data-toggle="modal" data-target="#contact_modal"
+        role="button">Contact Us
+      </a>
+
+      <!-- Modal -->
+<div class="modal fade" id="contact_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      ...
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-primary">Save changes</button>
+    </div>
+  </div>
+</div>
+</div>
+
+    </div>
+    <!--/.Call to action-->
+
+    <hr class="my-4">
+
+    <!-- Social icons
+    <div class="pb-4">
+      <a href="https://www.facebook.com/mdbootstrap" target="_blank">
+        <i class="fab fa-facebook-f mr-3"></i>
+      </a>
+
+      <a href="https://twitter.com/MDBootstrap" target="_blank">
+        <i class="fab fa-twitter mr-3"></i>
+      </a>
+
+      <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
+        <i class="fab fa-youtube mr-3"></i>
+      </a>
+
+      <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
+        <i class="fab fa-google-plus-g mr-3"></i>
+      </a>
+
+      <a href="https://dribbble.com/mdbootstrap" target="_blank">
+        <i class="fab fa-dribbble mr-3"></i>
+      </a>
+
+      <a href="https://pinterest.com/mdbootstrap" target="_blank">
+        <i class="fab fa-pinterest mr-3"></i>
+      </a>
+
+      <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
+        <i class="fab fa-github mr-3"></i>
+      </a>
+
+      <a href="http://codepen.io/mdbootstrap/" target="_blank">
+        <i class="fab fa-codepen mr-3"></i>
+      </a>
+    </div>
+    Social icons -->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+      © 2020 Copyright:
+      <a href="http://relly.io" target="_blank"> relly.io</a>
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+  
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+
+  </script>
+</body>

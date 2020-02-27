@@ -44,7 +44,7 @@
       <div class="container">
 
         <!-- Brand -->
-        <img class="navbar-brand waves-effect" width="66.66px" src="../assets/imgs/relly.png">
+        <img class="navbar-brand waves-effect" width="66.66px" src="../assets/imgs/tt_logo.png">
 
         <!-- Collapse -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -57,22 +57,17 @@
 
           <!-- Left -->
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link waves-effect" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
             <li class="nav-item">
               <a class="nav-link waves-effect" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link waves-effect" href="#about">About</a>
+              <a class="nav-link waves-effect" href="#specialties">Work</a>
             </li>
             <li class="nav-item">
               <a class="nav-link waves-effect" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link waves-effect" href="#contact" >Contact</a>
+              <a class="nav-link waves-effect" (click)="showContactInfo()">Contact</a>
             </li>
           </ul>
 
@@ -85,8 +80,25 @@
   </header>
   <!--Main Navigation-->
 
+  <!-- Modal -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <h3 id="myModalLabel">Modal header</h3>
+  </div>
+  <div class="modal-body">
+      <p>One fine body…</p>
+  </div>
+  <div class="modal-footer">
+      <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+      <button class="btn btn-primary">Save changes</button>
+  </div>
+</div>
+
   <!--Main layout-->
   <main class="pt-5">
+    
+
       <!--Section: Jumbotron-->
       <section class="card wow laptop-bg fadeIn ">
 
@@ -94,13 +106,13 @@
         <div class="card-body text-black text-center py-5 px-5 my-5">
 
           <h1 class="mb-4">
-            <strong>Relly Development</strong>
+            <strong>Talos Technologies</strong>
           </h1>
           <p>
-            <strong>We're really that good.</strong>
+            <strong>Let's build some awesome software.</strong>
           </p>
 
-          <a class="btn btn-outline-black" data-toggle="modal" data-target="#contact_modal" role="button">Contact Us
+          <a class="btn btn-outline-black" (click)="showContactInfo()">Contact Us
           </a>
 
         </div>
@@ -117,14 +129,14 @@
         <!-- Heading & Description -->
         <div class="wow fadeIn">
           <!--Section heading-->
-          <h2 class="h1 text-center">About <img class="navbar-brand waves-effect" width="100px" src="../assets/imgs/relly.png"></h2>
+          <h2 class="h1 text-center">About Us </h2>
         </div>
 
           <div class="row wow fadeIn">
             <div class="col-md-8 my-auto">
 
-              <p><strong>Relly</strong> is a small-scale team of passionate and experienced developers. </p>
-              <p>Recently established in 2019, we are ready to make a name for ourselves and create some awesome software.</p>
+              <p><strong>Talos Technologies, LLC</strong> is a small-scale team of passionate and experienced developers. </p>
+              <p>Recently established in 2019, we are ready to make a name for ourselves and build some awesome software.</p>
               
             </div>
 
@@ -150,7 +162,7 @@
           <!--Section heading-->
           <h2 class="h1 text-center">Let's Work Together</h2>
           <!--Section description-->
-          <p class="text-center">We have a plethora of experience and knowledge in a variety of different areas: </p>
+          <p class="text-center">Our developers have a plethora of experience and knowledge in a variety of different areas: </p>
         </div>
 
           <div class="row">
@@ -271,7 +283,7 @@
             <div class="view overlay rounded z-depth-1">
               <img src="../assets/imgs/my_clinicals.png" class="img-fluid"
                 alt="">
-              <a href="http://myclinicals.com" target="_blank">
+              <a href="http://allware.us/page/myclinicals_home" target="_blank">
                 <div class="mask rgba-white-slight"></div>
               </a>
             </div>
@@ -287,7 +299,7 @@
             <p>
               <strong>Used by leading hospitals such as the <a href="https://my.clevelandclinic.org/" target="_blank" >Cleveland Clinic.</a></strong>
             </p>
-            <a href="http://myclinicals.com" target="_blank" class="btn btn-primary btn-md">MyClinicals
+            <a href="http://allware.us/page/myclinicals_home" target="_blank" class="btn btn-primary btn-md">MyClinicals
               <i class="fas fa-play ml-2"></i>
             </a>
           </div>
@@ -383,31 +395,9 @@
 
     <!--Call to action-->
     <div class="pt-4">
-      <a class="btn btn-outline-white" data-toggle="modal" data-target="#contact_modal"
+      <a class="btn btn-outline-white" (click)="showContactInfo()"
         role="button">Contact Us
       </a>
-
-      <!-- Modal -->
-<div class="modal fade" id="contact_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-aria-hidden="true">
-<div class="modal-dialog" role="document">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="modal-body">
-      ...
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      <button type="button" class="btn btn-primary">Save changes</button>
-    </div>
-  </div>
-</div>
-</div>
 
     </div>
     <!--/.Call to action-->
@@ -453,17 +443,11 @@ aria-hidden="true">
     <!--Copyright-->
     <div class="footer-copyright py-3">
       © 2020 Copyright:
-      <a href="http://relly.io" target="_blank"> relly.io</a>
+      <a href="http://talostec.io" target="_blank"> Talos Technologies, LLC</a>
     </div>
     <!--/.Copyright-->
 
   </footer>
   <!--/.Footer-->
   
-  <!-- Initializations -->
-  <script type="text/javascript">
-    // Animations initialization
-    new WOW().init();
-
-  </script>
 </body>

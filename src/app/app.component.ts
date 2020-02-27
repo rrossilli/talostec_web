@@ -8,5 +8,5 @@ declare var $:any;
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'relly-web';
+  title = 'talostec-web';
 }

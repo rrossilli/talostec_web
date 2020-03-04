@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@font-face {
+    font-family: ma;
+    src: url(assets/fonts/MontserratAlternates-Regular.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: ma-regular;
+    src: url(assets/fonts/Montserrat-Regular.ttf) format("opentype");
+}
+
+.talos-font{
+    font-family: 'ma';
+}
+
+.talos-font-reg{
+    font-family: 'ma-regular';
+}
+
+.talos-font.orange, .talos-font-reg.orange{
+    color: #f05e23;
+}
+
+.talos-font.gray, .talos-font-reg.gray{
+    color: rgb(32, 32, 32);
+}
